@@ -26,7 +26,8 @@ export default function SiteHeader() {
       { id: 'curriculum' as const, label: 'Curriculum', href: '/#curriculum' },
       { id: 'pricing' as const, label: 'Pricing', href: '/#pricing' },
       { id: 'contact' as const, label: 'Contact', href: '/#contact' },
-      { id: 'about' as const, label: 'About Us', href: '/about' }
+      { id: 'about' as const, label: 'About Us', href: '/about' },
+      { id: 'robocode' as const, label: 'Robocode', href: '/robocode' }
     ],
     []
   );
