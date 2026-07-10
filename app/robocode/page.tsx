@@ -114,7 +114,8 @@ export default function RobocodePage() {
               onSubmit={async (e) => {
                 e.preventDefault();
                 const form = e.currentTarget;
-                const data = { name: form.name.value, email: form.email.value, _subject: 'New Robocode Early Access Signup' };
+                const formData = new FormData(form);
+                const data = { name: formData.get('name') as string, email: formData.get('email') as string, _subject: 'New Robocode Early Access Signup' };
                 try {
                   await fetch('https://formsubmit.co/ajax/codeabode101@gmail.com', {
                     method: 'POST',
